@@ -19,6 +19,6 @@ pip install -r requirements.txt
 ## Run the Code
 I've concluded hyperparameter tuning by using optuna, and therefore main.py fixed accordingly. Also, you can train standalone model by using *train_loop()*
 
-## Acknowledment
+## Acknowledgement
 Currently, I've prepared the paper of this project besides including data collection steps. However, we're doing an additional novel experiments on this topic.
 So, paper link/details will be shared as soon as the paper is published. 
