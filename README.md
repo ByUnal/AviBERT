@@ -11,7 +11,7 @@ Overall, since data and targets are unique, the presented model in this study is
 
 
 ## Setup
-Install the requirements. I've added torch to requirements.txt but you can prefer to install by yourself according to different cuda version and resources.
+Install the requirements. I've added torch to requirements.txt, but you can prefer to install by yourself according to different cuda version and resources.
 ```commandline
 pip install -r requirements.txt
 ```
@@ -19,6 +19,11 @@ pip install -r requirements.txt
 ## Run the Code
 I've concluded hyperparameter tuning by using optuna, and therefore main.py fixed accordingly. Also, you can train standalone model by using *train_loop()*
 
+## Results
+The results that we obtained our experiments as below:
+![plot](./results/acc-f1_scores.png)
+
+You can also see the best parameters for the models after hyperparameter optimization in *results/params.txt*
 ## Acknowledgement
 Currently, I've prepared the paper of this project besides including data collection steps. However, we're doing an additional novel experiments on this topic.
 So, paper link/details will be shared as soon as the paper is published. 

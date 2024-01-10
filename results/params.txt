@@ -1,0 +1,63 @@
+Model Name: distilbert-base-uncased
+Best Score: 0.6430863652840643
+Best Params: 
+  EPOCHS: 5
+  BATCH_SIZE: 32
+  LR: 5e-05
+  WD: 0.0001
+  OPT: RMSprop
+************************************************************
+Model Name: albert-base-v2
+Best Score: 0.6370035931881839
+Best Params: 
+  EPOCHS: 5
+  BATCH_SIZE: 48
+  LR: 5e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
+Model Name: huawei-noah/TinyBERT_General_6L_768D
+Best Score: 0.6499193438968445
+Best Params: 
+  EPOCHS: 7
+  BATCH_SIZE: 16
+  LR: 3e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
+Model Name: roberta-base
+Best Score: 0.6491600098598747
+Best Params: 
+  EPOCHS: 5
+  BATCH_SIZE: 48
+  LR: 5e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
+bert-base-uncased
+Best Score: 0.6548374336934382
+Best Params: 
+  EPOCHS: 5
+  BATCH_SIZE: 16
+  LR: 3e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
+Model Name: google/electra-base-discriminator
+Best Score: 0.6513194910894985
+Best Params: 
+  EPOCHS: 7
+  BATCH_SIZE: 64
+  LR: 5e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
+Model Name: YituTech/conv-bert-base
+Best Score: 0.6431987265042431
+Best Params: 
+  EPOCHS: 5
+  BATCH_SIZE: 16
+  LR: 5e-05
+  WD: 0.0001
+  OPT: AdamW
+************************************************************
