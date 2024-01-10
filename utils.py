@@ -1,10 +1,15 @@
+"""Comprises necessary functions for train and test"""
+
+import numpy as np
+import torch
 from torch.utils.data import TensorDataset
-from sklearn.metrics import f1_score, accuracy_score
 from torch.utils.data import DataLoader, SequentialSampler
 from tqdm.auto import tqdm
+from sklearn.metrics import f1_score, accuracy_score
 
 
-def createBertDataset(df, tokenizer, max_length=256):
+def create_bert_dataset(df, tokenizer, max_length=256):
+    """Create compatible dataset for BERT training"""
     encoded_data_train = tokenizer.batch_encode_plus(
         df.text.values.tolist(),
         add_special_tokens=True,
@@ -23,6 +28,7 @@ def createBertDataset(df, tokenizer, max_length=256):
 
 
 def evaluate(model, test_dataset, device="cpu"):
+    """Evaluate the model on test dataset"""
     model.eval()
 
     test_dataloader = DataLoader(test_dataset,

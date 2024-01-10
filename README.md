@@ -24,6 +24,10 @@ The results that we obtained our experiments as below:
 ![plot](./results/acc-f1_scores.png)
 
 You can also see the best parameters for the models after hyperparameter optimization in *results/params.txt*
+
+Some of the conclusions obtained:
+- In DistilBert training, the model overt fits the training data up to %93 accuracy score however it generalizes badly.
+- torch.clip_norm function demolishes the model success rate, it shows that additional algorithms are unnecessary for bert base models.
 ## Acknowledgement
 Currently, I've prepared the paper of this project besides including data collection steps. However, we're doing an additional novel experiments on this topic.
 So, paper link/details will be shared as soon as the paper is published. 
