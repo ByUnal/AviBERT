@@ -16,11 +16,32 @@ Install the requirements. I've added torch to requirements.txt, but you can pref
 pip install -r requirements.txt
 ```
 
+## Dataset
+
+The **avibert** dataset is available on the Hugging Face Hub.
+
+### Download or Load with 🤗 Datasets
+
+You can easily load the dataset in Python:
+
+```python
+from datasets import load_dataset
+
+dataset = load_dataset("byunal/avibert")
+```
+
+Or download the CSV files directly from [https://huggingface.co/datasets/byunal/avibert](https://huggingface.co/datasets/byunal/avibert).
+
+- `avibert_train.csv`
+- `avibert_val.csv`
+- `avibert_test.csv`
+
 ## Run the Code
-I've concluded hyperparameter tuning by using optuna, and therefore main.py fixed accordingly. Also, you can train standalone model by using *train_loop()*
+I've concluded hyperparameter tuning by using optuna, and therefore `main.py` fixed accordingly. Also, you can train standalone model by using `train_loop()`
 
 ## Results
 The results that we obtained our experiments as below:
+
 ![plot](./results/acc-f1_scores.png)
 
 You can also see the best parameters for the models after hyperparameter optimization in *results/params.txt*
@@ -29,5 +50,4 @@ Some of the conclusions obtained:
 - In DistilBert training, the model overt fits the training data up to %93 accuracy score however it generalizes badly.
 - torch.clip_norm function demolishes the model success rate, it shows that additional algorithms are unnecessary for bert base models.
 ## Acknowledgement
-Currently, I've prepared the paper of this project besides including data collection steps. However, we're doing an additional novel experiments on this topic.
-So, paper link/details will be shared as soon as the paper is published. 
+This work has been accepted by the SIU 2025 Conference. The paper link/details will be shared as soon as the paper is published. 
